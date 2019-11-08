@@ -28,4 +28,3 @@ The folder "Locating a Point" contains:
 3. The PDF export of the Jupyter notebook, (`Question 5.pdf`)
 
 Yet again, __I'd recommend reading the PDF first__, before opening the Jupyter notebook, in case you're interested in understanding the working of the code, as it contains all of that information clearly. It is written logically and with (hopefully) ample explanations. You could also try opening the `Plane.py` file and see what it does, and read the provided documentation.
-
