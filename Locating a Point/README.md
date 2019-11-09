@@ -14,30 +14,6 @@ We will create an object to focus on this rectangular region, and divide it into
 
 For this purpose, I've created my own Python class (called Plane), which takes care of the plane's position in real space, is able to find which quadrant a given point lies in, and is able to return its bounding box's coordinates as a list of points, making it easier for us to draw the boxes using SageMath's `polygon` function when the required quadrant is found.
 
-## Implementation:
-
-We will do this assignment in Python using SageMath, as SageMath provides us with a good graphing toolkit, which can easily plot polygons.
-
-First, we will import the Plane class from Plane.py, located in this directory. (Please make sure it is present in this directory when checking whether this code is working.)
-
-Next, we're defining the overall plane's boundaries in real space (basically our <img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/ceca16cc03449c06f6a3aaa6342fd588.svg?invert_in_darkmode" align=middle width=49.813665pt height=29.169030000000006pt/>).
-
-I've chosen a square region [0,10] on both axes.
-
-Creating the Plane object using the constructor method which takes in 2 lists as inputs, one with the x-range and the other with the y-range.
-
-Then we're printing it's bounding box's values, just to ensure that it initialized properly.
-
-Next, we're plotting our sample space, before we start locating the point accurately.
-
-I've randomly chosen the point to be `[3,4]`, but it could indeed be anything within the range of the plane.
-
-(Note that if you do put in a point outside this plane region, you'll get a `NoneType` object, which will stop the code from executing. So, the exceptions are handled in some way.)
-
-Now, we will zero in on our point, recursively, 6 times. Change the `depth` from 6 to a larger value to make it zero in more closely.
-
-The plot below shows the point in red, and all the quadrants found at each stage in blue.
-
 ## Documentation:
 
 ### Plane.py
