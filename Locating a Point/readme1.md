@@ -8,7 +8,7 @@ The given problem can be restated as follows:
 
 ## Proposed Solution Methodology:
 
-We will first choose a rectangular region <img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/1da7945fa0e272be75154fc003189a3a.svg?invert_in_darkmode" align=middle width=54.54916500000001pt height=29.169030000000006pt/> and a point lying in <img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/1e438235ef9ec72fc51ac5025516017c.svg?invert_in_darkmode" align=middle width=12.608475000000004pt height=22.46574pt/>.
+We will first choose a rectangular region $R\in{\rm I\!R}^2$ and a point lying in $R$.
 
 We will create an object to focus on this rectangular region, and divide it into four quadrants. Next, we will find which quadrant our point lies in. Then, we will focus on that quadrant as our new plane, and repeat the same process again.
 
@@ -20,7 +20,7 @@ We will do this assignment in Python using SageMath, as SageMath provides us wit
 
 First, we will import the Plane class from Plane.py, located in this directory. (Please make sure it is present in this directory when checking whether this code is working.)
 
-Next, we're defining the overall plane's boundaries in real space (basically our <img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/ceca16cc03449c06f6a3aaa6342fd588.svg?invert_in_darkmode" align=middle width=49.813665pt height=29.169030000000006pt/>).
+Next, we're defining the overall plane's boundaries in real space (basically our $r\in{\rm I\!R}^2$).
 
 I've chosen a square region [0,10] on both axes.
 

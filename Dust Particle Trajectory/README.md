@@ -13,36 +13,36 @@ line plot.
 
 ## Proposed Solution Methodology:
 
-First, let us find the equation of the particle. We know that $x$ and $y$ should be dependent on time $t$, and since it is following a helical path with reducing radius, we can assume that:
+First, let us find the equation of the particle. We know that <img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/332cc365a4987aacce0ead01b8bdcc0b.svg?invert_in_darkmode" align=middle width=9.395100000000005pt height=14.155350000000013pt/> and <img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/deceeaf6940a8c7a5a02373728002b0f.svg?invert_in_darkmode" align=middle width=8.649300000000004pt height=14.155350000000013pt/> should be dependent on time <img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/4f4f4e395762a3af4575de74c019ebb5.svg?invert_in_darkmode" align=middle width=5.936155500000004pt height=20.222069999999988pt/>, and since it is following a helical path with reducing radius, we can assume that:
 
-$$x(t) = f(t)\cos(t), y(t) = f(t)\sin(t)$$
+<p align="center"><img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/bb6613ded971606c4f591612c591c354.svg?invert_in_darkmode" align=middle width=248.82pt height=16.438356pt/></p>
 
-such that $f(T)\rightarrow 0$ where $T$ is the time the particle takes to reach the bottom.
+such that <img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/ae6cf54c4c6577b7fdc4b52790a95d00.svg?invert_in_darkmode" align=middle width=68.28195pt height=24.65759999999998pt/> where <img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/2f118ee06d05f3c2d98361d9c30e38ce.svg?invert_in_darkmode" align=middle width=11.889405000000002pt height=22.46574pt/> is the time the particle takes to reach the bottom.
 
 Now, we also know that the particle's angular velocity is constant, hence we can say:
 
-$$\omega = \frac{v}{r} = \frac{\sqrt{v_x^2+v_y^2}}{x^2+y^2} = \omega_0 \text{ (a constant)}$$
+<p align="center"><img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/5123cba4ed5534050d34aef0ee163e52.svg?invert_in_darkmode" align=middle width=272.12129999999996pt height=50.472345pt/></p>
 
-Now, let us replace $x(t),y(t),v_x(t) = x'(t), \text{ and } v_y(t) = y'(t)$ into the equation. This yields:
+Now, let us replace <img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/a6ebea7e384d94fa4b530bd4804c6ff3.svg?invert_in_darkmode" align=middle width=292.95040499999993pt height=24.716340000000006pt/> into the equation. This yields:
 
-$$\frac{\sqrt{f(t)^2+f'(t)^2}}{f(t)}=\omega_0$$
+<p align="center"><img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/8b932d37730cfb25caeffb959f427735.svg?invert_in_darkmode" align=middle width=153.64305pt height=41.52258pt/></p>
 
 On squaring both sides and doing some manipulations, we arrive at:
 
-$$f'(t) = \pm\sqrt{\omega_0-1}\left|f(t)\right|$$
+<p align="center"><img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/aa7a881e4c2030a5489510db0508ecd0.svg?invert_in_darkmode" align=middle width=167.8809pt height=17.935005pt/></p>
 
 When we solve the above differential equation, we get:
 
-$$f(t) = Ae^{Kt}, \text{ where } K = \pm\sqrt{\omega_0-1}$$
+<p align="center"><img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/29b3caa709495b496edb270ce6473f24.svg?invert_in_darkmode" align=middle width=257.85375pt height=18.75984pt/></p>
 
 Thus, we choose the equation of the curve to be:
 
-$$(x,y,z) = \left(k r_0 e^{-\frac{t}{2k}}\cos(t), k r_0 e^{-\frac{t}{2k}}\sin(t), r_0 - \frac{t}{k}\right), t \in \left[0,k r_0\right]$$
+<p align="center"><img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/4625f36e0a5092ce6d46791db39753d9.svg?invert_in_darkmode" align=middle width=449.19105pt height=39.45249pt/></p>
 
 ## Implementation
 We will use implement this in Python using SageMath, as SageMath provides us with a ready library for plotting 3d parametric plots.
 
-We will plot this using the `parametric_plot3d` function of SageMath: (using arbitrary values of $r_0$ and $k$)
+We will plot this using the `parametric_plot3d` function of SageMath: (using arbitrary values of <img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/1db75c795ab2c794f72bbe79b8113be1.svg?invert_in_darkmode" align=middle width=13.968900000000003pt height=14.155350000000013pt/> and <img src="https://rawgit.com/abhigyan2001/FinalAssignment/master/svgs/63bb9849783d01d91403bc9a5fea12a2.svg?invert_in_darkmode" align=middle width=9.075495000000004pt height=22.831379999999992pt/>)
 
 ## Documentation
 
